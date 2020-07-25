@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liphoto">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MpesaBalanceDialog"></activity>
+        <activity android:name=".AlertDialogActivity" />
+        <activity
+            android:name=".Tester"
+            android:label="Tester" />
+        <activity
+            android:name=".SendMoney"
+            android:label="@string/SendMoneyActivityName" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.hover.ApiKey"
+            android:value="55bc77cb1c5625992673e5068572c92a" />
+
+        <receiver
+            android:name=".TransactionReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.liphoto.CONFIRMED_TRANSACTION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mpesa</string>
+    <string name="getbalance">Balance</string>
+    <string name="sendMoney">Send</string>
+    <string name="MpesaRecipient">Recipient</string>
+    <string name="MpesaAmount">Amount</string>
+    <string name="ButtonConfirmRecipient">Confirm</string>
+    <string name="SendMoneyActivityName">Send Money</string>
+    <string name="mobile_balance_is">mobile balance is</string>
+
+</resources>
